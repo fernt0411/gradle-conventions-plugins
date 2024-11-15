@@ -4,12 +4,26 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/buildconfiguration" name="buildconfiguration">
+                <projects>
+                  <project path="$PROJECT_DIR$/buildconfiguration" />
+                  <project path="$PROJECT_DIR$/buildconfiguration/convention" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/buildconfiguration" />
+            <option value="$PROJECT_DIR$/buildconfiguration/convention" />
             <option value="$PROJECT_DIR$/feature1" />
             <option value="$PROJECT_DIR$/feature2" />
             <option value="$PROJECT_DIR$/feature3" />
@@ -18,6 +32,5 @@
         <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
-    <option name="offlineMode" value="true" />
   </component>
 </project>

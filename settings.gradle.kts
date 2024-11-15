@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("buildconfiguration")
     repositories {
         google()
         mavenCentral()
