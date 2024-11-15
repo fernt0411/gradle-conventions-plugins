@@ -10,6 +10,7 @@ internal fun Project.uiDependencies(){
         add("implementation", versionCatalog().findLibrary("core-ktx").get())
         add("implementation", versionCatalog().findLibrary("appcompat").get())
         add("implementation", versionCatalog().findLibrary("material3").get())
+        add("implementation", platform(versionCatalog().findLibrary("compose-bom").get()))
     }
 }
 internal fun Project.testDependencies(){
